@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+<p id="demo2"></p>
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+<p id="sear"></p>
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="slc"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+document.getElementById("slc").innerHTML = res; 
+</script>
+
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+document.getElementById("sear").innerHTML = pos;
+</script>
+
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+document.getElementById("demo2").innerHTML = pos;
+</script>
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length;
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo1").innerHTML = pos;
+</script>
+
+</body>
+</html>
+
+
